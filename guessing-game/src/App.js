@@ -4,7 +4,7 @@ import Main from "./routes";
 
 function App() {
    return (
-      <div className="App">
+      <div className="page-wrapper">
          <Main />
       </div>
    );

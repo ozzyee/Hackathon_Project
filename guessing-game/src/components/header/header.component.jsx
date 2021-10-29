@@ -1,12 +1,12 @@
 import React from "react";
-import "./style.css";
+import "./header.style.css";
 
 function Header({ title }) {
    console.log(title);
    return (
       <>
          <div className="header-wrapper">
-            <h1>{title}</h1>
+            <h1 className="title">{title}</h1>
          </div>
       </>
    );

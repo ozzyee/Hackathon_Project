@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./game-select-placeholder.style.css";
 
 function GameSelectImagePlaceholder({ alt, src }) {
    return (
