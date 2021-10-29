@@ -1,12 +1,14 @@
 import React from "react";
 import "./style.css";
 
-function GameSelectPlaceholder() {
+function GameSelectImagePlaceholder({ alt, src }) {
    return (
       <>
-         <div>this is the placeholder</div>
+         <div className="game-image-wrapper">
+            <img className="placeholder-image" src={src} alt={alt} />
+         </div>
       </>
    );
 }
 
-export default GameSelectPlaceholder;
+export default GameSelectImagePlaceholder;

@@ -1,10 +1,13 @@
 import React from "react";
 import "./style.css";
 
-function Header() {
+function Header({ title }) {
+   console.log(title);
    return (
       <>
-         <div>this is the Header</div>
+         <div className="header-wrapper">
+            <h1>{title}</h1>
+         </div>
       </>
    );
 }

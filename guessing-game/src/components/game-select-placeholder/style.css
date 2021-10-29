@@ -1,0 +1,13 @@
+/* game image css */
+.game-image-wrapper {
+   border-radius: 22px;
+   width: 200px;
+   height: 200px;
+   border: 2px solid red;
+   overflow: hidden;
+}
+
+.placeholder-image {
+   width: 100%;
+   height: 100%;
+}
