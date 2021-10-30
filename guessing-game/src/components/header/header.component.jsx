@@ -2,7 +2,6 @@ import React from "react";
 import "./header.style.css";
 
 function Header({ title }) {
-   console.log(title);
    return (
       <>
          <div className="header-wrapper">

@@ -1,7 +1,21 @@
 /* game image css */
 .game-image {
    border-radius: 22px;
-   width: 150px;
-   height: 150px;
-   border: 2px solid green;
+   width: 90vw;
+   height: 200px;
+
+   overflow: hidden;
+}
+
+.game-main-image {
+   width: 100%;
+   height: 100%;
+}
+
+@media (min-width: 992px) {
+   .game-image {
+      border-radius: 22px;
+      width: 90vw;
+      height: 350px;
+   }
 }

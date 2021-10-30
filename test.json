@@ -1,33 +1,43 @@
-// "test.com/{id}"
 
 {
-   "quiz1": {
+	"quiz1": {
+	
+      "id": "uid",
+      "title": "Halk",
+      "image": "url to image",
+      "images":["url1", "url2", "url3"],
+      "answers": ["anser1", "anser2", "anser3"]
+      
+      },
+      
+      "quiz2": {
+	
+      "id": "uid",
+      "title": "Iron Man",
+      "image": "url to image",
+      "images":["url1", "url2", "url3"],
+      "answers": ["anser1", "anser2", "anser3"]
+      
+      },
+      
+      "quiz3": {
+	
       "id": "uid",
       "title": "this is the title of the quiz",
       "image": "url to image",
+      "images":["url1", "url2", "url3"],
       "answers": ["anser1", "anser2", "anser3"]
-   }
+      
+      },
+      
+      "quiz4": {
+	
+      "id": "uid",
+      "title": "this is the title of the quiz",
+      "image": "url to image",
+      "images":["url1", "url2", "url3"],
+      "answers": ["anser1", "anser2", "anser3"]
+      
+      }
 }
-
-// "test.com/"
-{
-    "quiz1": {
-       "id": "uid",
-       "title": "this is the title of the quiz",
-       "image": "url to image",
-       "answers": ["anser1", "anser2", "anser3"]
-    },
-    "quiz2": {
-        "id": "uid",
-        "title": "this is the title of the quiz",
-        "image": "url to image",
-        "answers": ["anser1", "anser2", "anser3"]
-     },
-     "quiz3": {
-        "id": "uid",
-        "title": "this is the title of the quiz",
-        "image": "url to image",
-        "answers": ["anser1", "anser2", "anser3"]
-     }
- }
 

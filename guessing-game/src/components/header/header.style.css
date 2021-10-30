@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 
 .header-wrapper {
-   height: 10vh;
-   border: 2px solid blue;
+   margin-top: 20px;
    width: 100%;
 }
 
 .title {
-   font-family: "Open Sans Condensed", sans-serif;
+   font-family: "Oxygen", sans-serif;
    font-weight: normal;
    text-align: center;
-   text-decoration: underline;
+   color: white;
+   margin: 0px;
+   margin-top: 5px;
 }

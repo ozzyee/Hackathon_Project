@@ -9,20 +9,26 @@ function Quiz() {
    const url = window.location.href;
    const urlSplit = url.split("/");
    const id = urlSplit[4];
-   const [arrNum, setArrNum] = useState(0);
-   const [inputValue, setInputValue] = useState("");
-   const [answersArr, setAnswersArr] = useState([]);
-   const [myAnswer, setMyAnswer] = useState("");
-   const [correctData, setCorrectData] = useState([]);
-
    const currentData = data.filter(function (item) {
       return item.id === id;
    });
    const quizData = currentData[0];
 
-   let questionsFilter = quizData.images.filter(
-      (itemX) => !correctData.includes(itemX.answer)
+   //    STATE
+   const [arrNum, setArrNum] = useState(0);
+   const [inputValue, setInputValue] = useState("");
+   const [correctAnswer, setCorrectAnswer] = useState([""]);
+
+   let answers = [];
+
+   const questionsFilter = quizData.images.filter(
+      (itemX) => !correctAnswer.includes(itemX.answer)
    );
+
+   for (let i = 0; i < questionsFilter.length; i++) {
+      const answer = questionsFilter[i].answer;
+      answers.push(answer);
+   }
 
    const nextQuestion = () => {
       setArrNum(arrNum + 1);
@@ -46,47 +52,13 @@ function Quiz() {
       }
    };
 
-   useEffect(() => {
-      const ansArr = answersArr.length;
-      const currAnswerNum = ansArr - 1;
-      const CurrAnswer = answersArr[currAnswerNum];
-      setMyAnswer(CurrAnswer);
-   }, [answersArr]);
-
-   // useEffect(() => {
-   //    console.log("IBE ");
-   // }, [quizData, myAnswer, arrNum]);
-
-   useEffect(() => {
-      const currData = quizData.images[arrNum];
-      const answer = currData.answer;
-      console.log("CHECK MY ANSWER", answer);
-      const CorretAns = myAnswer == answer;
-
-      console.log(CorretAns);
-      console.log("this is the answer => => =>", answer);
-
-      if (CorretAns) {
-         setCorrectData([...correctData, myAnswer]);
-      }
-   }, [myAnswer, questionsFilter.length]);
-
-   console.log(myAnswer);
-
    const checkAnswer = () => {
-      const currData = quizData.images[arrNum];
-      const answer = currData.answer;
-
-      setAnswersArr([...answersArr, inputValue]);
+      if (inputValue === answers[arrNum]) {
+         setCorrectAnswer([...correctAnswer, inputValue]);
+      }
    };
 
-   // console.log("thi is the length => =>", questionsFilter.length);
-   // console.log("thi is the arrNum => =>", arrNum);
-   // console.log("this is the data => => => =>", questionsFilter);
-   // console.log("this is search ", searches);
-   // console.log("thi is the answer array => => => => => =>", answersArr);
-
-   // console.log("thi sis my new arr", correctData);
+   console.log("this is the answer", correctAnswer.length - 1);
 
    return (
       <div>
@@ -98,16 +70,21 @@ function Quiz() {
 
             <div className="control-wrapper">
                <div className="selected-image-wrapper">
-                  <img
-                     className="selected-image"
-                     src={questionsFilter[arrNum].image}
-                     alt="no-image"
-                  />
+                  {questionsFilter.length > 0 && (
+                     <img
+                        className="selected-image"
+                        src={questionsFilter[arrNum].image}
+                        alt="no-image"
+                     />
+                  )}
                </div>
 
                <div className="score-answer-wrapper">
                   <div className="score-wrapper">
-                     <Score />
+                     <Score
+                        score={correctAnswer.length - 1}
+                        total={currentData[0].images.length}
+                     />
                   </div>
 
                   <div className="input-wrapper">
