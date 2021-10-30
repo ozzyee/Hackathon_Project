@@ -1,0 +1,14 @@
+.score-wrapper-component {
+   width: 92%;
+   height: 100%;
+   background-color: #269db8;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   font-size: 16px;
+}
+
+.score {
+   color: white;
+}

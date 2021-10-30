@@ -1,0 +1,263 @@
+/* game image css */
+.game-image {
+   border-radius: 22px;
+   width: 90vw;
+   height: 200px;
+
+   overflow: hidden;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.game-main-image {
+   /* width: 100%; */
+   height: 100%;
+}
+
+.imageWrapper-on-click {
+   position: absolute;
+   width: 350px;
+   height: 400px;
+   display: none;
+}
+
+#Blackhat {
+   width: 100px;
+   height: 100px;
+   border-bottom-right-radius: 60px;
+   position: relative;
+   cursor: pointer;
+}
+
+#Coraline {
+   width: 50px;
+   height: 42px;
+   position: absolute;
+   margin-left: 75px;
+   top: 86px;
+   cursor: pointer;
+}
+
+#WarGames {
+   width: 80px;
+   float: right;
+   margin-right: 90px;
+   height: 43px;
+   cursor: pointer;
+
+   margin-top: -20px;
+}
+
+#Halloween {
+   width: 50px;
+   margin-left: auto;
+   margin-top: 37px;
+   height: 40px;
+   margin-right: -40px;
+   float: right;
+   cursor: pointer;
+}
+
+#The-Shining {
+   width: 110px;
+   margin-left: 145px;
+   margin-right: 30px;
+   margin-top: 130px;
+   height: 50px;
+   position: absolute;
+   cursor: pointer;
+}
+
+#Swordfish {
+   width: 40px;
+   height: 40px;
+   margin-top: 40px;
+   float: right;
+   margin-right: -120px;
+   cursor: pointer;
+}
+
+#The-Matrix {
+   width: 60px;
+   height: 36px;
+   margin-left: 70px;
+   margin-top: 95px;
+   position: relative;
+   cursor: pointer;
+}
+
+#Ghost-in-The-Shell {
+   width: 60px;
+   position: absolute;
+   float: right;
+   margin-top: -43px;
+   right: 130px;
+   height: 33px;
+   cursor: pointer;
+}
+
+#Hackers {
+   width: 35px;
+   height: 35px;
+   margin-left: 110px;
+   margin-top: 10px;
+   cursor: pointer;
+}
+
+#Sneakers {
+   width: 60px;
+   height: 40px;
+   margin-left: 70px;
+   margin-top: 10px;
+   cursor: pointer;
+}
+
+#Goldeneye {
+   width: 50px;
+   height: 40px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 30px;
+   position: absolute;
+   margin-left: 150px;
+   cursor: pointer;
+}
+
+#The-Ring {
+   width: 50px;
+   height: 40px;
+   float: right;
+   margin-top: -42px;
+   margin-right: 78px;
+   cursor: pointer;
+}
+
+/* ///////////////////////// */
+#Get-Out {
+   width: 60px;
+   height: 35px;
+   margin-right: 173px;
+   margin-left: auto;
+   margin-top: 55px;
+   cursor: pointer;
+   border: 2px solid transparent;
+}
+
+#The-Net {
+   width: 40px;
+   height: 38px;
+   margin-top: 5px;
+   margin-left: 249px;
+   position: absolute;
+   cursor: pointer;
+   border: 2px solid transparent;
+}
+
+#The-Nightmare-Before-Christmas {
+   width: 70px;
+   height: 60px;
+   margin-top: -57px;
+   margin-left: 343px;
+   cursor: pointer;
+   border: 2px solid transparent;
+}
+
+#Tron {
+   width: 92px;
+   height: 50px;
+   margin-left: -23px;
+   margin-top: -5px;
+   cursor: pointer;
+   border: 2px solid transparent;
+}
+
+#Evil-Dead-II {
+   width: 30px;
+   height: 35px;
+   margin-left: 88px;
+   margin-top: -29px;
+   position: absolute;
+   cursor: pointer;
+   border: 2px solid transparent;
+}
+
+#Beetlejuice {
+   margin-top: -5px;
+   margin-top: -5px;
+   margin-top: -5px;
+   margin-top: -5px;
+   width: 97px;
+   height: 40px;
+   margin-left: -27px;
+   margin-top: -1px;
+   cursor: pointer;
+   border: 2px solid transparent;
+}
+
+#The-Silence-of-the-Lambs {
+   border: 2px solid transparent;
+   width: 95px;
+   height: 75px;
+   margin-left: 150px;
+   margin-top: -45px;
+   cursor: pointer;
+}
+
+#The-Fifth-Estate {
+   border: 2px solid transparent;
+   width: 97px;
+   height: 35px;
+   margin-left: -75px;
+   margin-top: -20px;
+   cursor: pointer;
+}
+
+#Silk-Road {
+   border: 2px solid transparent;
+   width: 92px;
+   height: 27px;
+   margin-left: -75px;
+   margin-top: -2px;
+   cursor: pointer;
+}
+
+#The-Girl-with-the-Dragon-Tattoo {
+   border: 2px solid transparent;
+   width: 90px;
+   height: 170px;
+   margin-left: 65px;
+   margin-top: -55px;
+   cursor: pointer;
+}
+
+#Firewall {
+   border: 2px solid transparent;
+   width: 140px;
+   height: 60px;
+   margin-left: 250px;
+   margin-top: -1px;
+   cursor: pointer;
+}
+
+#It {
+   border: 2px solid transparent;
+   width: 26px;
+   height: 50px;
+   margin-left: 350px;
+   margin-top: -220px;
+   cursor: pointer;
+}
+
+@media (min-width: 992px) {
+   .game-image {
+      border-radius: 22px;
+      width: 90vw;
+      height: 350px;
+   }
+
+   .imageWrapper-on-click {
+      display: block;
+   }
+}

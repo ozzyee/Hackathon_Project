@@ -1,0 +1,67 @@
+{
+	"id": "OdditiesAndEvenDataID",
+   "title": "Oddities And Events",
+   "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/Oddities%20and%20Evens.png?alt=media&token=f5a44d94-17b3-4ef2-8bf6-6f52f55523fd",
+   "images": [
+      {
+         "id": "01",
+         "answer": "Blackhat",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/Blackhat.png?alt=media&token=8be167f2-7e6d-44ba-9c57-a8321a905cc2"
+      },
+      {
+         "id": "02",
+         "answer": "Goldeneye",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/Goldeneye.png?alt=media&token=1399f935-7ce5-4b0b-90c8-d430023f5896"
+      },
+      {
+         "id": "03",
+         "answer": "Coraline",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/Goldeneye.png?alt=media&token=1399f935-7ce5-4b0b-90c8-d430023f5896"
+      },
+      {
+         "id": "04",
+         "answer": "WarGames",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/WarGames.png?alt=media&token=03a91d0b-36e3-4d50-8d55-49ba99355d42"
+      },
+      {
+         "id": "05",
+         "answer": "Halloween",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/Halloween.png?alt=media&token=f4a983e7-dc42-4588-a6fc-1a159eed19da"
+      },
+      {
+         "id": "06",
+         "answer": "Swordfish",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/Swordfish.png?alt=media&token=e4171a97-baf6-4288-9da7-5548fad18aa2"
+      },
+      {
+         "id": "07",
+         "answer": "The Matrix",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/The%20Matrix.png?alt=media&token=6971f723-c5a0-4dd7-aa75-e7999cebf426"
+      },
+      {
+         "id": "08",
+         "answer": "Ghost in The Shell",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/Ghost%20in%20the%20Shell.png?alt=media&token=44cfe1a5-6a6a-4a68-a782-e00c3b9813aa"
+      },
+      {
+         "id": "09",
+         "answer": "Hackers",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/Hackers.png?alt=media&token=8b384e29-23ca-4c0c-9c68-d6b9e070913d"
+      },
+      {
+         "id": "10",
+         "answer": "The Shining",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/The%20Shining.png?alt=media&token=8a5413c8-7c82-47a0-ad81-f20bb80ad80b"
+      },
+      {
+         "id": "11",
+         "answer": "Sneakers",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/Sneakers.png?alt=media&token=8c7867ac-4fa6-48f8-b0c0-91524ba54a7c"
+      },
+      {
+         "id": "12",
+         "answer": "The Ring",
+         "image": "https://firebasestorage.googleapis.com/v0/b/new-bugtracker.appspot.com/o/The%20RIng.png?alt=media&token=09afd3a4-a0b2-4166-9c5b-e03b8d2afbf3"
+      }
+   ]
+}
