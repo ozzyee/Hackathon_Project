@@ -3,7 +3,6 @@
    border-radius: 22px;
    width: 120px;
    height: 120px;
-   border: 2px solid blue;
    overflow: hidden;
 }
 
@@ -20,9 +19,8 @@
 }
 
 @media (min-width: 992px) {
-   .game-image-wrapper{
+   .game-image-wrapper {
       width: 200px;
       height: 200px;
    }
-
 }

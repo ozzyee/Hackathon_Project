@@ -41,6 +41,23 @@
    color: white;
 }
 
+h2 {
+   font-family: "Oxygen", sans-serif;
+   font-weight: normal;
+   text-align: center;
+   color: white;
+   margin: 0px;
+   margin-top: 5px;
+}
+
+.text-placeholder {
+}
+
+.description {
+   color: white;
+   font-size: 16px;
+}
+
 .answer-input::placeholder {
    color: white;
 }
@@ -148,11 +165,39 @@
 .center-quiz {
    height: 100vh;
    margin-top: 20px;
+   border-radius: 22px;
+}
+
+.logo-holder {
+   width: 40px;
+   position: absolute;
+   float: right;
+
+   margin-left: 20px;
+   border-radius: 22px;
+}
+
+.move-down {
+   margin-top: 50px;
+}
+
+.logo {
+   width: 100%;
+   border-radius: 22px;
+   display: none;
 }
 
 @media (min-width: 992px) {
    .main-image-wrapper {
       height: 350px;
+   }
+
+   .logo {
+      display: block;
+   }
+
+   .logo-holder {
+      width: 80px;
    }
 
    .buttons-wrapper {
@@ -203,5 +248,14 @@
    .grid-layout-wrapper {
       width: 980px;
       height: 80%;
+   }
+
+   .mobile {
+      display: none;
+   }
+
+   .center-quiz {
+      height: 0;
+      margin-top: 20px;
    }
 }

@@ -14,7 +14,7 @@ import TheRingImg from "./Oddities and Even Clues/The RIng.png";
 
 export const OdditiesAndEvenData = {
    id: "OdditiesAndEvenDataID",
-   title: "Oddities And EvenData",
+   title: "Oddities And Evens",
    image: MaineImage,
    images: [
       {
@@ -54,7 +54,7 @@ export const OdditiesAndEvenData = {
       },
       {
          id: "08",
-         answer: "Ghost in The Shell",
+         answer: "Ghost in the Shell",
          image: GhostInTheShellImg,
       },
       {

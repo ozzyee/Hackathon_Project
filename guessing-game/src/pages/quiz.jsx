@@ -3,12 +3,12 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/header/header.component";
 import GameMainImage from "../components/game-image/game-image.component";
 import Score from "../components/progress-bar/progress-bar.component";
-import { data } from "../fake-data/data";
 import { allPuzzles } from "../database/all-data";
 
 import GreatJob from "../images/Great Job.jpeg";
 
 function Quiz() {
+   const [data, setData] = useState();
    const url = window.location.href;
    const urlSplit = url.split("/");
    const id = urlSplit[4];
@@ -71,15 +71,40 @@ function Quiz() {
       const id = ev.target.id;
       const idSplit = id.split("-");
 
-      if (idSplit.length > 1) {
-         console.log("has more than 1");
+      if (id !== "") {
+         if (idSplit.length >= 1) {
+            const question = idSplit.join(" ");
+
+            const currentDataOnClick = questionsFilter.filter(function (item) {
+               return item.answer === question;
+            });
+
+            const filter = answers.filter(function (item) {
+               return item === question;
+            });
+
+            console.log(question);
+
+            if (filter.length == 0) {
+               window.alert("This One Has been Complete");
+            }
+
+            try {
+               const arrayNumber = currentDataOnClick[0].id - 1;
+
+               console.log(arrayNumber);
+               setArrNum(arrayNumber);
+            } catch (e) {
+               console.log("this is the error", e);
+            }
+         }
       }
-      console.log(idSplit);
    };
 
    return (
       <div>
-         <Header title="this is a quiz" />
+         <Header title={quizData.title} />
+         <h2>Find the film titles in the picture:</h2>
          <div className="center-quiz">
             <div className="main-image-wrapper">
                <GameMainImage
