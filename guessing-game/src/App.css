@@ -78,7 +78,13 @@
 
 .selected-image {
    height: 140px;
-   width: 140px;
+   width: 160px;
+   border-radius: 22px;
+   object-fit: fill;
+}
+
+.image-wrapper {
+   border-radius: 22px;
 }
 
 .score-wrapper {
@@ -88,6 +94,11 @@
    height: 35px;
    margin-top: 20px;
    margin-bottom: 20px;
+}
+
+.red-border {
+   border: 2px solid red;
+   transition: border 200ms;
 }
 
 .buttons-wrapper {
