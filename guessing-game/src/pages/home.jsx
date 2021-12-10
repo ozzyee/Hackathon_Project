@@ -9,6 +9,7 @@ function Home() {
    const quizSelect = (ev) => {
       const id = ev.target.offsetParent.id;
       document.location.href = `/quiz/${id}`;
+      setData("hello")
    };
 
    return (
